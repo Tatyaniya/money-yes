@@ -1,0 +1,961 @@
+@import "bourbon"
+@import "fonts"
+@import "vars"
+
+$green: #54C62B;
+$gr-dark: #2E2E2E;
+$gr-light: #E5E5E5;
+$gr-medium: #494949;
+$white: #ffffff;
+
+h1, h2, h3, h4, h5, h6, ul, span, p
+	margin: 0
+
+*
+	box-sizing: border-box
+
+ul, li
+  list-style-type: none
+  padding-left: 0
+
+body
+  min-width: 320px
+  overflow-x: hidden
+  font-family: 'Roboto', sans-serif
+  font-size: 16px
+  font-weight: 300
+  background-color: #E5E5E5
+  color: #2B314D
+
+img
+  display: block
+  max-width: 100%
+
+a
+  display: inline-block
+  transition: all 0.3s linear
+
+
+  &:hover
+    text-decoration: none
+
+.container
+  width: 1170px
+  padding: 0
+  margin: 0 auto
+
+button:focus
+  outline: none
+
+button:active
+  outline: none
+
+.title2,
+.title3,
+.title4,
+.title5,
+.title6
+    font-family: 'bebasneue', sans-serif
+    text-transform: uppercase
+    color: $gr-dark
+
+.title2
+    font-size: 80px
+    line-height: 104px
+    
+.title3
+    font-size: 60px
+
+.title4
+    font-size: 50px    
+
+.title5
+    font-size: 40px
+    color: $white
+
+.title6
+    font-size: 35px
+    letter-spacing: 0.03em
+
+.line-separator
+    width: 83%
+    height: 1px
+    background: rgba(46, 46, 46, 0.1)
+    margin: 0 auto
+
+/************** header **************/
+
+.header__line
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    padding: 17px 0 22px
+
+.logo
+    font-family: 'bebasneue', sans-serif
+    font-size: 25px
+    font-weight: bold
+    text-transform: uppercase
+    display: flex
+
+.logo__black
+    color: $gr-dark
+
+.logo__green
+    color: $green
+
+.header__cont
+    display: flex
+    justify-content: flex-end
+
+.menu
+    display: flex
+    align-items: center
+    margin-right: 10px
+
+.menu__item
+    margin-right: 30px
+
+.menu__link
+    font-size: 12px
+    color: rgba(0, 0, 0, 0.4)
+
+.menu__link:hover
+    color: $gr-dark
+
+.top
+    display: flex
+    margin-right: 10px
+
+.top__item
+    margin-right: 30px
+
+.top__link
+    font-weight: 500
+    font-size: 12px
+    color: $gr-dark
+    padding: 10px 21px
+    background: $white
+
+.top__link:hover
+    color: $gr-dark
+    text-decoration: underline
+
+.upper
+    text-transform: uppercase
+
+.lang
+    display: flex
+    align-items: center
+
+.lang__first,
+.lang__second
+    position: relative
+
+.lang__first:after,
+.lang__second:after
+    content: ''
+    display: block
+    width: 1px
+    height: 15px
+    position: absolute
+    background: #C4C4C4
+    opacity: 0.2
+    top: 7px
+    right: 0
+
+.lang__link
+    color: #CCCCCC
+    font-size: 12px
+    font-weight: 500
+    text-transform: uppercase
+    padding: 5px 10px 6px
+    background: $white
+
+.lang__link:hover
+    color: $gr-dark
+
+.lang-active
+    background: $green
+    color: $white
+
+.lang__first
+    border-radius: 30px 0 0 30px
+
+.lang__last
+    border-radius: 0px 30px 30px 0px
+
+.offer
+    padding-top: 59px
+
+.offer__title 
+    width: 570px
+    margin-bottom: 60px
+
+.offer__percent
+    display: inline-block
+    color: $white
+    background: url('../img/percent_bg.svg')
+    background-repeat: no-repeat
+    background-position: left center
+    background-size: cover
+    line-height: 0.95
+    padding: 5px 22px 0 32px
+    margin-left: 22px
+
+.offer__text
+    display: flex
+    align-items: center
+
+.offer__icon
+    margin-right: 20px
+
+.offer__guess
+    width: 470px
+    font-size: 22px
+    font-weight: 500
+    line-height: 34px
+    color: $gr-dark
+
+.login
+    background: url('../img/login_bg.svg')
+    background-repeat: no-repeat
+    background-position: center -144px
+    padding: 43px 45px 128px 58px
+    border-radius: 10px 10px 0 0
+    margin-top: 40px
+
+.login-avt
+    padding-bottom: 87px
+
+.login__cont
+    width: 234px
+    margin: 0 auto
+
+.login__title
+    margin-bottom: 15px
+    text-align: center
+
+.login__link
+    width: 234px
+    color: $white
+    font-size: 14px
+    letter-spacing: 0.03em
+    text-align: center
+    background: rgba(255, 255, 255, 0.15)
+    border-radius: 3px
+    padding: 14px 0
+    margin-bottom: 16px
+
+.login__link:hover
+    width: 208px
+    margin-left: 13px
+    color: $white
+
+.fab
+    font-size: 19px
+    margin-right: 5px
+
+.social
+    margin-bottom: 40px
+    align-items: center
+
+.socilal__link
+    width: 66px
+    height: 45px
+    color: $white
+    background: rgba(255, 255, 255, 0.15)
+    border-radius: 3px
+    text-align: center
+    line-height: 50px
+
+.socilal__link:hover
+    transform: scale(0.87)
+    color: $white
+
+.noyet__link
+    align-items: center
+    justify-content: center
+    color: $white
+    font-size: 14px
+    font-weight: 500
+    
+.noyet__text
+    border-bottom: 1px solid transparent
+    transition: all 0.5s linear
+
+.noyet__link:hover
+    color: $white
+    
+.noyet__link:hover .noyet__text
+    border-bottom: 1px solid $white
+
+.noyet__text
+    margin-right: 7px
+
+/*************  rates  **************/
+
+.rates
+    background: $white
+    padding-top: 30px
+    padding-bottom: 20px
+    overflow: hidden
+
+.rates__list
+    display: flex
+    margin-bottom: 30px
+
+.rates__item
+    width: 110px
+    height: 150px
+    margin-right: 10px
+    color: $white
+    padding-top: 26px
+    padding-right: 10px
+
+.rates__item-dark
+    background: url('../img/bg-dark.svg')
+
+.rates__item-light
+    background: url('../img/bg-light.svg')
+
+.rates__icon
+    width: 35px
+    height: 35px
+    background: url('../img/target.svg')
+    margin: 0 auto 10px auto
+
+.rates__title
+    font-size: 18px
+    font-weight: 500
+    text-align: center
+
+.rates__kef
+    font-size: 12px
+    text-align: center
+
+.rates__text
+    font-size: 14px
+    font-weight: 600
+    color: $gr-dark
+    opacity: 0.3
+    text-align: center
+
+/*************  cases  **************/
+
+.cases
+    padding-top: 100px
+
+.cases__title
+    text-align: center
+    margin-bottom: 25px
+
+.cases__cont
+    width: 386px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 66px
+
+.cases--left
+    margin-left: auto
+
+.cases__cool
+    width: 100%
+    position: relative
+
+.cases__img
+    width: 100%
+    height: 196px
+    background: #C4C4C4
+    margin-bottom: 48px
+
+.cases__rotate
+    width: 225px
+    height: 60px
+    overflow: hidden
+    position: absolute
+    bottom: 13px
+    left: 50%
+    transform: translateX(-50%)
+
+.cases__text
+    width: 235px
+    font-family: 'bebasneue', sans-serif
+    font-size: 25px
+    line-height: 1
+    letter-spacing: 0.03em
+    color: $white
+    text-align: center
+    transform: rotate(-5.18deg)
+    background: $gr-dark
+    padding: 5px
+    margin-top: 10px
+    margin-left: -5px
+
+.cases__cost
+    width: 260px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+
+.cases__price
+    font-family: 'bebasneue', sans-serif
+    font-size: 35px
+    letter-spacing: 0.03em
+    color: $gr-dark
+
+.cases__link
+    font-family: 'Roboto Condensed', sans-serif
+    width: 127px
+    height: 40px
+    font-size: 14px
+    letter-spacing: 0.03em
+    color: rgba(43, 49, 77, 0.4)
+    text-align: center
+    line-height: 40px
+    background: rgba(207, 207, 207, 0.2)
+
+.cases__link:hover
+    color: rgba(43, 49, 77, 1)
+    background: rgba(207, 207, 207, 0.5)
+
+.cases__buy 
+    width: 259px
+    height: 45px
+    color: $white
+    background: $green
+    border-radius: 3px
+    font-size: 14px
+    line-height: 45px
+    font-weight: bold
+    letter-spacing: 0.03em
+    text-align: center
+
+.cases__buy:hover
+    color: $white
+    transform: scale(1.06)
+
+.separator
+    width: 2px
+    height: 100px
+    background: $gr-dark
+    opacity: 0.1
+    margin: 0 auto
+
+/*************  guarantees  **************/
+
+.guarantees
+    padding-top: 60px
+
+.guarantees-page
+    padding-top: 90px
+
+.guarantees__title
+    text-align: center
+    margin-bottom: 60px
+
+.guarantees__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-right: -70px
+    margin-bottom: 20px
+
+.guarantees__item
+    width: 250px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-right: 70px
+
+.guarantees__icon
+    width: 70px
+    height: 70px
+    border-radius: 50%
+    margin-bottom: 30px
+
+.guarantees__icon_1
+    background: url('../img/guar1.svg') center 48%
+
+.guarantees__icon_2
+    background: url('../img/guar2.svg') center 48%
+
+.guarantees__icon_3
+    background: url('../img/guar3.svg') center 48%
+
+.guarantees__icon_4
+    background: url('../img/guar4.svg') center 48%
+
+.guarantees__icon_5
+    background: url('../img/guar5.svg') center 48%
+
+.guarantees__icon_6
+    background: url('../img/guar6.svg') center 48%
+
+.guarantees__subtitle
+    font-size: 18px
+    font-weight: bold
+    text-align: center
+    color: $gr-dark
+    margin-bottom: 23px
+
+.guarantees__text
+    width: 240px
+    font-size: 14px
+    text-align: center
+    opacity: 0.6
+    margin-bottom: 70px
+
+.guarantees__line-separator
+    margin-bottom: 50px
+
+/*************  day  **************/
+
+.day
+    padding-top: 82px
+
+.day__title
+    margin-bottom: 20px
+
+.day__text
+    width: 320px
+    font-size: 18px
+    line-height: 27px
+    font-weight: normal
+
+.thank
+    width: 385px
+    box-shadow: 0px 4px 150px rgba(0, 0, 0, 0.1)
+    background: url('../img/thank-bg.svg') center 40%
+    border-radius: 10px 10px 0 0 
+    padding-top: 33px
+    padding-left: 58px
+    padding-bottom: 117px
+    position: relative
+    margin-left: -15px
+
+.thank__bg
+    width: 100%
+    height: 50px
+    position: absolute
+    left: 0
+    bottom: -50px
+    z-index: -1
+    background: #54C62B
+
+.thank__cont
+    display: flex
+
+.thank__title
+    margin-bottom: 30px
+
+.thank__icon
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background: rgba(255, 255, 255, 0.1)
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 20px
+
+.thank__earnings
+    display: flex
+    flex-direction: column
+    color: $white
+
+.thank__count
+    font-size: 22px
+    font-weight: bold
+
+.thank__text
+    font-size: 14px
+    font-weight: normal
+
+/*************  today  **************/
+
+.today
+    padding-top: 90px
+    padding-bottom: 90px
+    background: url('../img/today-bg-1.png') center top
+    background-size: cover
+
+.today__cont
+    width: 504px
+    margin: 0 auto
+
+.today__title
+    color: $white
+    line-height: 96px
+    text-align: center
+    margin-bottom: 30px
+
+.today__entrance
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.social__today
+    margin-bottom: 0
+
+.login__link-today
+    background: $green
+    margin-bottom: 0
+    margin-right: 30px
+
+.socilal__link-today
+    border-radius: 3px
+    margin-right: 16px
+
+.socilal__link-today::last-child
+    margin-right: 0
+
+/*************  reviews  **************/
+
+.reviews
+    padding-top: 60px
+
+.reviews__title
+    margin-bottom: 70px
+
+.reviews__link
+    width: 190px
+    height: 45px
+    background: $green
+    color: rgba(255, 255, 255, 0.9)
+    font-size: 14px
+    font-weight: normal
+    font-family: 'Roboto Condensed', sans-serif
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: auto
+
+.reviews__link span
+    border-bottom: 1px solid transparent
+    transition: all 0.3s
+
+.plus
+    width: 18px
+    height: 18px
+    margin-right: 10px
+
+.reviews__link:hover
+    color: rgba(255, 255, 255, 0.9)
+
+.reviews__link:hover span
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9)
+
+.reviews__cont
+    background: $white
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.05)
+    border-radius: 20px
+    padding: 30px
+    font-family: 'Roboto Condensed', sans-serif
+    letter-spacing: 0.03em
+    margin-bottom: 30px
+
+.reviews__text
+    color: #2B314D
+    padding-bottom: 20px
+    border-bottom: 1px solid rgba(46, 46, 46, 0.1)
+    margin-bottom: 20px
+
+.reviews__desc
+    display: flex
+    align-items: center
+
+.reviews__icon
+    width: 35px
+    height: 35px
+    border-radius: 50%
+    margin-right: 16px
+    
+.reviews__subtitle
+    font-weight: normal
+
+.reviews__data
+    font-size: 12px
+
+.reviews__line-separator
+    margin-top: 110px
+
+/*************  topbets  **************/
+
+.topbets
+    padding: 60px 0
+
+.topbets__title
+    margin-bottom: 20px
+
+.topbets__text
+    font-size: 18px
+    font-weight: normal
+
+.topbets__press
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+.topbets__link
+    width: 250px
+    height: 70px
+    border: 1px solid rgba(46, 46, 46, 0.1)
+    border-radius: 10px
+    display: flex
+    align-items: center
+    padding-left: 18px
+
+.topbets__icon
+    width: 42px
+    height: 42px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 5px
+
+.topbets__link span
+    width: 174px
+    font-size: 12px
+    line-height: 18px
+    font-weight: 500
+    color: rgba(46, 46, 46, 0.5)
+
+.topbets__link:hover span
+    text-decoration: underline
+
+.topb
+    padding-top: 30px
+    padding-bottom: 30px
+
+.topb1
+    background: $green
+
+.topb__list
+    display: flex
+    justify-content: space-between
+
+.topb__item
+    width: 170px
+    height: 180px
+    background: $white
+    border-radius: 10px
+    padding-top: 16px
+
+.topb__foto
+    width: 140px
+    height: 82px
+    background: rgba(46, 46, 46, 0.2)
+    margin: 0 auto 18px
+
+.topb__title
+    font-size: 18px
+    font-weight: 500
+    color: rgba(46, 46, 46, 0.9)
+    text-align: center
+
+.topb__kef
+    font-size: 12px
+    font-weight: normal
+    text-align: center
+    color: rgba(46, 46, 46, 0.9)
+
+.topb__line-separator
+    width: 970px
+    margin: 90px auto 0
+
+
+/*************  footer  **************/
+
+.footer
+    padding-top: 70px
+    padding-bottom: 180px
+
+.footer-reviews,
+.topb-footer
+    padding-top: 120px
+
+.footer__separator
+    margin-bottom: 70px
+
+.footer__title
+    text-align: center
+    margin-bottom: 100px
+
+.footer__subtitle
+    margin-bottom: 23px
+
+.footer p
+    width: 280px
+    font-family: 'Roboto Condensed', sans-serif
+    line-height: 24px
+    letter-spacing: 0.03em
+    margin-bottom: 25px
+
+.footer__info img
+    margin-right: 15px
+
+.footer__info p
+    font-family: 'Roboto Condensed', sans-serif
+    line-height: 21px
+    letter-spacing: 0.03em
+    font-weight: normal
+    color: #2B314D
+
+.footer a 
+    display: flex
+    color: $green
+    margin-bottom: 14px
+
+    &:hover
+        color: $green
+        text-decoration: underline
+
+.footer a img
+    margin-right: 9px
+
+
+/*************  popup  **************/
+
+.popup-pass,
+.popup-message
+    width: 470px
+    height: 400px
+    background: $white
+    box-shadow: 0px 4px 200px rgba(0, 0, 0, 0.15)
+    border-radius: 10px
+    padding: 15px
+
+.popup-message
+    height: 460px
+
+.arcticmodal-close
+    width: 20px
+    height: 20px
+    margin-left: auto
+    cursor: pointer
+
+.box-modal__cont
+    padding: 16px 30px
+
+.box-modal__state
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 30px
+
+.box-modal__title
+    color: $gr-dark
+
+.box-modal__title span
+    color: $green
+
+.win,
+.loss
+    width: 120px
+    height: 35px
+    border-radius: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.win
+    background: $green
+
+.loss
+    background: #F27676
+
+.win__tick,
+.loss__tick
+    width: 12px
+    height: 8px
+    margin-right: 8px
+
+.win__text,
+.loss__text
+    font-size: 14px
+    font-weight: 500
+    color: $white
+
+.info
+    display: flex
+
+.info__foto
+    width: 140px
+    height: 82px
+    background: rgba(46, 46, 46, 0.2)
+    margin-right: 25px
+
+.info__more
+    display: flex
+    align-items: center
+    margin-bottom: 14px
+
+.info__icon
+    width: 18px
+    height: 18px
+    margin-right: 9px
+
+.info__prop
+    font-size: 12px
+    font-weight: normal
+    color: rgba(46, 46, 46, 0.45)
+
+.info__value
+    font-weight: 700
+
+.box-modal__title-message
+    margin-bottom: 24px
+
+.popup-message__text
+    font-size: 18px
+    font-weight: normal
+    margin-bottom: 42px
+
+.box-modal__message
+    width: 370px
+    height: 100px
+    resize: none
+    background: rgba(46, 46, 46, 0.05)
+    border: none
+    padding: 15px 22px
+    margin-bottom: 30px
+
+    &::placeholder
+        font-family: 'Roboto Condensed', sans-serif
+        font-size: 14px
+        font-weight: normal
+        letter-spacing: 0.03em
+        color: rgba(46, 46, 46, 0.3)
+
+.box-modal__mes-submit
+    width: 259px
+    height: 45px
+    text-align: center
+    background: $green
+    border: none
+    border-radius: 3px
+    color: $white
+    font-size: 14px
+    font-weight: bold
+    letter-spacing: 0.03em
+    transition: all 0.3s
+
+    &:hover
+        color: rgba(255, 255, 255, 0.84)
+
+    &:focus
+        outline: none
+        box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3)
+
+    
+
+
+
+
+
+
+
+
+@import "media"

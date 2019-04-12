@@ -15,6 +15,11 @@ $(function () {
         $('#exampleModal_3').arcticmodal();
     });
 
+    $(".topb__item").click(function (e) {
+        e.preventDefault();
+        $('#exampleModal_4').arcticmodal();
+    });
+
 
 
   $('.hamburger__btn').on('click', function () {

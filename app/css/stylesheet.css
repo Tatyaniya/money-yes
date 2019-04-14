@@ -1428,7 +1428,9 @@ a {
   .offer__guess {
     width: 230px; }
   .login-lk {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .popup-promo {
+    width: 540px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -1470,12 +1472,76 @@ a {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .arcticmodal-container_i2 {
+    padding: 10px; }
+  .popup-promo {
+    width: 450px;
+    padding: 25px 41px; } }
+
+@media only screen and (max-width: 490px) {
+  .popup-pass,
+  .popup-message {
+    width: 100%;
+    height: auto; }
+  .box-modal__cont--rev {
+    padding: 16px 20px; }
+  .box-modal__message {
+    width: 95%; }
+  .box-modal__mes-submit {
+    margin-bottom: 20px; }
+  .popup-promo {
+    width: 400px;
+    padding: 25px 12px; } }
+
+@media only screen and (max-width: 420px) {
+  .box-modal__state,
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .box-modal__title {
+    margin-bottom: 20px; }
+  .info__foto {
+    margin: 0 auto 20px; }
+  .box-modal__message {
+    width: 100%; }
+  .popup-promo .arcticmodal-close {
+    margin-bottom: 13px; }
+  .popup-promo {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    padding-bottom: 40px; }
+  .box-modal__cont-promo {
+    width: 100%; }
+  .popup-promo__title {
+    text-align: center; }
+  .popup-promo__cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .popup-promo__code {
+    margin-bottom: 10px; } }
 
 @media only screen and (max-width: 400px) {
   .thank {
     width: 300px;
-    padding-left: 22px; } }
+    padding-left: 22px; }
+  .popup-message__text br {
+    display: none; }
+  .box-modal__title-message,
+  .popup-message__text,
+  .box-modal__form {
+    text-align: center; } }
+
+@media only screen and (max-width: 350px) {
+  .box-modal__mes-submit {
+    width: 207px; } }
 
 @media only screen and (max-width: 340px) {
   .login-lk {

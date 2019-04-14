@@ -27,6 +27,9 @@ body
   background-color: #E5E5E5
   color: #2B314D
 
+.wrapper
+    overflow: hidden
+
 img
   display: block
   max-width: 100%
@@ -43,12 +46,6 @@ a
   width: 1170px
   padding: 0
   margin: 0 auto
-
-button:focus
-  outline: none
-
-button:active
-  outline: none
 
 .title2,
 .title3,
@@ -105,6 +102,7 @@ button:active
 .header__cont
     display: flex
     justify-content: flex-end
+    position: relative
 
 .menu
     display: flex
@@ -310,6 +308,7 @@ button:active
     color: $white
     padding-top: 26px
     padding-right: 10px
+    flex-shrink: 0
 
 .rates__item-dark
     background: url('../img/bg-dark.svg')
@@ -357,6 +356,9 @@ button:active
 
 .cases--left
     margin-left: auto
+
+.cases--right
+    margin-right: auto
 
 .cases__cool
     width: 100%
@@ -601,13 +603,13 @@ button:active
 .login__link-today
     background: $green
     margin-bottom: 0
-    margin-right: 30px
+    margin-right: 40px
 
 .socilal__link-today
     border-radius: 3px
     margin-right: 16px
 
-.socilal__link-today::last-child
+.socilal__link-last
     margin-right: 0
 
 /*************  reviews  **************/
@@ -630,6 +632,7 @@ button:active
     align-items: center
     justify-content: center
     margin-left: auto
+    margin-top: 12px
 
 .reviews__link span
     border-bottom: 1px solid transparent
@@ -734,7 +737,9 @@ button:active
 
 .topb__list
     display: flex
-    justify-content: space-between
+    flex-wrap: wrap
+    justify-content: center
+    margin-right: -23px
 
 .topb__item
     width: 170px
@@ -742,6 +747,7 @@ button:active
     background: $white
     border-radius: 10px
     padding-top: 16px
+    margin-right: 23px
 
 .topb__foto
     width: 140px
@@ -764,6 +770,10 @@ button:active
 .topb__line-separator
     width: 970px
     margin: 90px auto 0
+
+.topb__line-separator-no-avt
+    margin-top: 90px
+    margin-bottom: 114px
 
 
 /*************  footer  **************/
@@ -1071,10 +1081,4 @@ button:active
     
 
 
-
-
-
-
-
-
-@import "media"
+@import "_media"

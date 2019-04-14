@@ -23,7 +23,7 @@ $(function () {
 
 
   $('.hamburger__btn').on('click', function () {
-    $('.hamburgerMenu').toggleClass('activeHamburger');
+    $('.hamburger__nav').toggleClass('activeHamburger');
   });
 
 });

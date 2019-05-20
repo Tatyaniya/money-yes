@@ -88,7 +88,7 @@ a {
 /************** header **************/
 .header__line {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 17px 0 22px; }
+  padding: 25px 0 30px; }
 
 .logo {
   font-family: 'bebasneue', sans-serif;
@@ -437,31 +437,31 @@ a {
   margin-bottom: 48px; }
 
 .cases__rotate {
-  width: 225px;
-  height: 60px;
-  overflow: hidden;
-  position: absolute;
-  bottom: 13px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
+  text-align: center;
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  margin-top: -69px;
+  margin-bottom: 32px; }
 
 .cases__text {
-  width: 235px;
   font-family: 'bebasneue', sans-serif;
   font-size: 25px;
   line-height: 1;
   letter-spacing: 0.03em;
   color: #ffffff;
-  text-align: center;
-  -webkit-transform: rotate(-5.18deg);
-      -ms-transform: rotate(-5.18deg);
-          transform: rotate(-5.18deg);
   background: #2E2E2E;
   padding: 5px;
-  margin-top: 10px;
-  margin-left: -5px; }
+  display: inline-block;
+  padding: 7px 15px 5px;
+  -webkit-transform: skew(-5deg);
+      -ms-transform: skew(-5deg);
+          transform: skew(-5deg); }
+  .cases__text span {
+    display: inline-block;
+    -webkit-transform: skew(5deg);
+        -ms-transform: skew(5deg);
+            transform: skew(5deg); }
 
 .cases__cost {
   width: 260px;
